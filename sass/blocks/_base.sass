@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap')
 @font-face
-  font-family: 'GothamPro'
+  font-family: 'Futura PT'
   src: url("../fonts/GothamPro/GothamPro-Light.woff") format("woff"), 
   url("../fonts/GothamPro/GothamPro-Light.ttf") format("truetype")
   font-weight: 300
@@ -8,12 +8,11 @@
   font-display: swap
   
 *
-  font-family: "GothamPro", sans-serif
+  font-family: "Futura PT", sans-serif
   text-decoration: none
   box-sizing: border-box
 body
   overflow-x: hidden
-  padding-top: 186px
 .flex
   display: flex
   align-items: center
@@ -22,5 +21,91 @@ body
   position: relative
   width: 100%
   margin: 0 auto
-  max-width: 1350px
+  max-width: 1310px
   padding: 0 15px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.litex
+  position: relative
+  cursor: pointer
+  &-btn
+    background: url(../images/litex.png) no-repeat 13px center, #FFFFFF
+    border: 1px solid transparent
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+    -webkit-border-radius: 20px
+    border-radius: 20px
+    height: 39px
+    padding: 0 15px 0 50px
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    font-weight: normal
+    font-size: 14px
+    line-height: 16px
+    color: #000000
+  &:hover 
+    text-decoration: underline
+    .litex-btn
+      border: 1px solid #E8E8E8
+    .litex-block
+      opacity: 1
+      visibility: visible
+  &-block
+    position: absolute
+    right: 0
+    bottom: 39px
+    padding-bottom: 20px
+    opacity: 0
+    visibility: hidden
+    -webkit-transition: .1s ease-in-out
+    -o-transition: .1s ease-in-out
+    transition: .1s ease-in-out
+    &-container
+      background: #FFFFFF
+      border: 1px solid #E8E8E8
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+      -webkit-border-radius: 20px
+      border-radius: 20px
+      width: 190px
+      padding: 15px 25px
+    &__title
+      display: block
+      font-weight: normal
+      font-size: 14px
+      line-height: 1.4
+      color: #000000
+      margin-bottom: 10px
+    &__link
+      font-family: Roboto
+      display: block
+      font-weight: 300
+      font-size: 14px
+      line-height: 1.5
+      color: #8E8E8E
