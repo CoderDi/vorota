@@ -32,7 +32,7 @@ $("form").submit(function() { //Change
 $(document).ready(function(){
 
   $(document).scroll(function(){
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 0) {
       $("#header").addClass("active");
     } else {
       $("#header").removeClass("active");
