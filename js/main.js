@@ -43,63 +43,11 @@ $(document).ready(function(){
     $("#popup-call").addClass("active");
   });
 
-  $(".js-cart").on("click", function(){
-    $(".js-cart-item-title").text($(".js-item-title").text());
-    $(".js-cart-item-img").attr("src", $(".js-item-img").attr("src"));
-    $(".js-cart-item-img").attr("src", $(".js-item-img").attr("src"));
-    $(".js-cart-count").val("1");
-    $(".js-cart-one-price").text($(".js-item-price").text());
-    calc();
-    $("#popup-cart").addClass("active");
-  });
-
-  $(".js-popup-close").click(function(){
-    $(this).parents(".popup").removeClass("active");
-  });
-  $(".js-butter").click(function(){
-    $(".js-menu").addClass('active');
-  });
-  $(".js-menu-close").click(function(){
-    $(".js-menu").removeClass('active');
-  });
-
-  $(".contacts__tab").click(function(){
-    $(".contacts__tab").removeClass("active");
-    $(this).addClass("active");
-    if ($(this).data("tab") == "2") {
-      $(".contacts__map").addClass("active");
-    } else {
-      $(".contacts__map").removeClass("active");
-    }
-  });
-
-  function calc() {
-    var one = parseInt($(".js-cart-one-price").text()),
-        count = parseInt($(".js-cart-count").val());
-    $(".js-cart-price").text((one*count));
-    return;
-  }
-  $(".js-counter-minus").on("click", function(){
-    var count = parseInt($(".js-cart-count").val() - 1);
-    if (count < 1) count = 1
-    $(".js-cart-count").val(count);
-    calc();
-  });
-  $(".js-counter-plus").on("click", function(){
-    $(".js-cart-count").val(parseInt($(".js-cart-count").val()) + 1);
-    calc();
-  });
-
-  $(".full-content__block_title").click(function(){
-    if ($(window).innerWidth() <= 768) {
-      $(this).toggleClass("active");
-      $(this).next(".full-content__block_content").slideToggle(200);
-    }
-  });
+  
 
   
   $(".js-gallery-slider").slick({
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [{
       breakpoint: 1200,
@@ -115,68 +63,9 @@ $(document).ready(function(){
     }]
   });
 
-  $(".js-full-slider-nav").slick({
-    infinite: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    vertical: true,
-    asNavFor: '.js-full-slider-for',
-    arrows: false,
-    focusOnSelect: true
+  $(".js-item-slider").slick({
+    infinite: false
   });
-  $(".js-full-slider-for").slick({
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    asNavFor: '.js-full-slider-nav',
-    arrows: true,
-    draggable: false,
-    touchMove: false,
-    accessibility: false,
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        dots: true,
-        arrows: false,
-        touchMove: true,
-      }
-    }]
-  });
-
-  $(".js-gallery-full-nav").slick({
-    infinite: false,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    asNavFor: '.js-gallery-full-for',
-    arrows: false,
-    focusOnSelect: true,
-    responsive: [{
-      breakpoint: 1170,
-      settings: {
-        slidesToShow: 4,
-      }
-    }]
-  });
-  $(".js-gallery-full-for").slick({
-    infinite: false,
-    slidesToShow: 1,
-    fade: true,
-    slidesToScroll: 1,
-    asNavFor: '.js-gallery-full-nav',
-    arrows: true,
-    draggable: false,
-    touchMove: false,
-    accessibility: false,
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        dots: true,
-        arrows: false,
-        touchMove: true,
-      }
-    }]
-  });
-
 
   $("a[href^='#']").click(function(){
     var _href = $(this).attr("href");
@@ -198,57 +87,6 @@ $(document).ready(function(){
         $(this).parents("form").find("input[type='submit']").attr("disabled", true);
     }
   });  
-
-  var myMap;
-  ymaps.ready(function () {
-    if ($("#map").length != 0) {
-          myMap = new ymaps.Map('map', {
-          center: [54.309312, 48.318690],
-          zoom: 11,
-        }),
-        myPlacemark = new ymaps.Placemark([54.309312, 48.318690], {
-          hintContent: 'г. Ульяновск, ул. Московское шоссе,  д. 78Б',
-          balloonContent: 'г. Ульяновск, ул. Московское шоссе,  д. 78Б'
-        }, {
-          iconLayout: 'default#image',
-          iconImageHref: 'images/pin.png',
-          iconImageSize: [33, 53],
-          iconImageOffset: [-17, -53]
-        });
-        myMap.geoObjects.add(myPlacemark);
-    }
-    
-  });
-
-  Date.prototype.getDaysInMonth = function() {
-    return (new Date(this.getFullYear(), this.getMonth() + 1, 0)).getDate();
-  };
-  var now = new Date(),
-      year = now.getFullYear(),
-      month = now.getMonth() + 1,
-      day = now.getDate(),
-      dayInMonth = now.getDaysInMonth(),
-      text = '';
-  if ((day < 15) || (day == dayInMonth)) {
-    if (day == dayInMonth) {
-      month += 1;
-    }
-    if (month > 12) {
-      month = 1;
-      year += 1;
-    }
-    if (month < 10) {
-      month = '0' + month;
-    }
-    text = '15.' + month + '.' + year;
-  } else {
-    if (month <= 9) {
-      month = '0' + month;
-    }
-    text = dayInMonth + '.' + month + '.' + year;
-  }
-  
-  $(".date").text(text);
 
 
 });
