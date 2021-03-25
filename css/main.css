@@ -2030,4 +2030,132 @@ body {
   line-height: 1.5;
   color: #8E8E8E;
 }
+
+.peregruz {
+  padding: 50px 0;
+}
+
+.peregruz__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.peregruz-sidebar {
+  width: 355px;
+  margin-left: 50px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.peregruz-sidebar__block {
+  padding: 30px;
+  background: #F8F8F8;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+}
+
+.peregruz-sidebar__contacts {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.peregruz-sidebar__contacts strong {
+  display: block;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 26px;
+  color: #212121;
+}
+
+.peregruz-sidebar__phone {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.peregruz-sidebar__phone:hover {
+  text-decoration: underline;
+}
+
+.peregruz-sidebar__time {
+  padding-left: 32px;
+  display: inline-block;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  background: url(../images/time.png) no-repeat left center;
+}
+
+.peregruz-content {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+     -moz-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.peregruz-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+
+.peregruz-item__img {
+  width: 300px;
+  height: 350px;
+  margin-right: 45px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  border: 1px solid #BBBBBB;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  overflow: hidden;
+}
+
+.peregruz-item__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.peregruz-item__title {
+  font-weight: 450;
+  font-size: 26px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.peregruz-item__text {
+  margin: 30px 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
 /*# sourceMappingURL=main.css.map */
