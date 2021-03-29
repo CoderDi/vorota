@@ -109,7 +109,7 @@ body
     padding: 25px 0
     .logo
       &-img
-        background: url(../images/logo-black.png)
+        background-image: url(../images/logo-black.png)
       &-text
         color: #000000;
     .header
@@ -176,6 +176,8 @@ body
 .banner
   position: relative
   overflow: hidden
+  &-btn
+    display: none
   &-img
     position: absolute
     width: 100%
@@ -189,7 +191,7 @@ body
     left: 0
     width: 100%
     height: 100%
-    background: rgba(12, 34, 4, 0.9)
+    background: url(../images/pattern.png), rgba(12, 34, 4, 0.9)
   &-wrapper
     position: relative
     z-index: 3
@@ -264,6 +266,8 @@ body
     background: #F6F6F6;
     &-img
       width: 48%
+      &--mobile
+        display: none
       img
         position: relative
         right: -100px
@@ -467,6 +471,8 @@ body
 
 .item
   margin-bottom: 50px
+  &-price-mobile, &-btn-mobile, &-tabs
+    display: none
   &-container
     display: flex
   &-img
@@ -613,7 +619,8 @@ body
         display: inline-block
         color: #7FC24C;
         margin-right: 5px
-
+.form-mobile
+  display: none
 .quest
   background: #EFEFEF;
   padding: 50px 0 65px

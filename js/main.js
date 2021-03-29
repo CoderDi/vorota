@@ -9,16 +9,11 @@ $("form").submit(function() { //Change
     url: "mail.php", //Change
     data: th.serialize()
   }).done(function() {
-	yaCounter70691485.reachGoal('call');
+
     $(".popup").removeClass("active");
 
-    if (th.hasClass("popup-form--cart")) {
-      //заказ
-      $("#popup-success2").addClass("active");
-    } else {
-      //заказать звонок
-      $("#popup-success").addClass("active");
-    }    
+    $("#popup-success").addClass("active");
+        
 
     setTimeout(function() {
       // Done Functions
@@ -42,6 +37,34 @@ $(document).ready(function(){
   $(".js-getcall").click(function(){
     $("#popup-call").addClass("active");
   });
+
+  $(".item-tab").click(function(){
+    $(this).parents(".item-bottom").find(".item-tab").removeClass("active");
+    $(this).addClass("active");
+    if ($(this).data("tab") == 1) {
+      $(".item-list1").show();
+      $(".item-list").hide();
+    } else {
+      $(".item-list1").hide();
+      $(".item-list").show();
+    }
+  });
+
+  $(".gallery-tab").click(function(){
+    $(".gallery-tab").removeClass("active");
+    $(this).addClass("active");
+  })
+
+  $(".js-popup-close").click(function(){
+    $(".popup").removeClass("active");
+  });
+  $(".js-get-raschet").click(function(){
+    $("#popup-raschet").addClass("active");
+  });
+  $(".js-get-zamer").click(function(){
+    $("#popup-zamer").addClass("active");
+  });
+  
 
   
 

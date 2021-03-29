@@ -1,25 +1,684 @@
 @media screen and (max-width: 1170px)
+  .section2
+    &-content
+      min-width: 600px
+    &-img
+      img
+        min-width: 600px
+        right: -50px
+  .variant
+    margin-right: 35px
+    flex-shrink: 1
+    &s
+      &-flex
+        align-items: flex-start
+    &-img
+      height: 270px
+    &-base
+      padding: 45px 0 0
+      flex-shrink: 2
+  .item
+    &-container
+      flex-wrap: wrap
+      justify-content: center
+    &-img
+      width: 475px
+      height: 475px
+      border-radius: 15px;
+      margin-bottom: 40px
+    &-slider
+      margin-bottom: 40px
+    &-content
+      width: 100%
+  .calc
+    &-top
+      flex-wrap: wrap
+      justify-content: space-around
+      margin-bottom: 40px
+    &-title
+      width: 100%
+      margin-bottom: 20px
+    &-contacts
+      margin: 0
+  .bottom
+    padding-bottom: 0
+    &-flex
+      display: block
+    &-form
+      width: 100%
+      margin: 0
+      padding: 0 0 40px
+      border: none
+      &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        input
+          width: calc(33.333% - 18px)
+          height: 60px
+          margin: 0
+    &-content
+      background: #F6F6F6;
+      padding: 20px 15px
+      margin: 0 -15px
+  .peregruz-sidebar
+    display: none
+
+
+@media screen and (max-width: 980px)
   .banner
     &-form
+      display: none
+    &-content
+      max-width: 100%
+      padding: 0
+      text-align: center
+    &-wrapper
+      padding: 175px 0 55px
+  .header
+    &-address
+      display: none
+    &.active &-btn
+      display: none
+    &.active
+      padding: 5px 0
+  .section
+    padding: 45px 0
+    &-title
+      margin-bottom: 25px
+      font-size: 30px;
+      line-height: 38px;
+  .preim
+    &-item
+      width: 50%
+      margin-bottom: 25px
+    &-list
+      flex-wrap: wrap
+      margin-bottom: -25px
+  .variant
+    width: calc(50% - 15px)
+    margin: 0
+    &s
+      &-flex
+        padding: 0 50px
+        flex-wrap: wrap
+        justify-content: space-between
+    &-base
+      padding-right: 220px
+      &::before
+        top: 50px
+        right: 50px
+        left: auto
+        background-image: url(../images/icons.svg#arrow-skew2)
+  .dop
+    width: 100%
+    padding: 0
+    margin-bottom: 35px
+    &-container
+      display: flex
+      align-items: center
+      text-align: left
+    &s-list
+      padding: 0 60px
+      margin: 0
+    &-img
+      width: 220px
+      height: 150px
+      margin: 0 45px 0 0
+      flex-shrink: 0
+  .form-mobile
+    display: block
+    background: #fff
+    padding: 45px 0
+    text-align: center
+    &__container
+      display: flex
+      align-items: center
+      justify-content: space-between
+      input
+        margin: 0
+        height: 60px
+        width: calc(33.333% - 18px)
+  .quest
+    &-img
+      width: 200px
+      height: 215px
+      margin-right: 30px
+  .calc
+    &-top
+      margin-bottom: 35px
+    &-title
+      font-size: 24px;
+      line-height: 31px;
+      margin-bottom: 20px
+    &-contacts
+      width: 100%
+      text-align: center
+      margin-bottom: 20px
+  .btn
+    width: 240px
+    height: 50px
+    font-weight: 450;
+  .gallery
+    &-tab
+      width: 200px
+      margin: 0 30px
+
+      &.active, &:hover
+        border: none
+        text-decoration: underline
+      &s
+        max-width: 550px
+        margin: 25px auto
+        flex-wrap: wrap
+        justify-content: center
+      &.all
+        display: none
+  .bottom
+    padding-bottom: 0
+    &-item
+      padding: 0
+      &__img
+        border-radius: 15px 0 0 15px
+  .footer
+    &-top
+      &__text
+        display: none
 
 
+@media screen and (max-width: 768px)
+  .header
+    padding: 13px 0
+    background: #fff
+    &.active
+      padding: 13px 0
+      .logo
+        &-text
+          color: #737373;
+    &-phone
+      font-size: 18px;
+      line-height: 23px;
+      color: #000
+      display: block
+    &-time
+      color: #000
+      font-size: 14px;
+      line-height: 18px;
+      background-size: 10px 10px
+      padding-left: 15px
+    &-contacts br
+      display: none
+  .logo
+    &-img
+      width: 44px
+      height: 34px
+      margin-right: 10px
+      background: url(../images/logo-black.png);
+      background-size: contain
+    &-text
+      font-size: 12px;
+      line-height: 15px;
+      color: #737373;
+  .banner
+    &-wrapper
+      padding: 115px 0 30px
+    &-title
+      font-size: 24px;
+      line-height: 31px;
+    &-subtitle
+      font-size: 20px
+      line-height: 1.2
+    &-text
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 25px
+    &-link
+      margin-right: 25px
+    &-btn
+      display: flex
+      width: 240px
+      height: 50px
+      margin: 0  auto 25px
+      font-weight: 450;
+  .section
+    padding: 20px 0
+    &-title
+      font-size: 24px;
+      line-height: 31px;
+      margin-bottom: 10px
+      text-align: left
+    &-subtitle
+      margin: 10px 0 20px
+      font-size: 18px;
+      line-height: 23px;
+      text-align: left
+    &2
+      &-img
+        display: none
+        &--mobile
+          display: block
+          img
+            display: block
+            width: 100%
+            max-width: 400px
+            height: auto
+            margin: 25px auto
+      &-content
+        width: 100%
+        min-width: 0
+      &-title
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 20px
+      &-text
+        margin: 20px 0
+        font-size: 18px;
+        line-height: 23px;
+      &-list
+        &__flex
+          display: block
+          .section2-list__item
+            width: 100%
+        &__item
+          width: 100%
+          padding-left: 65px
+          font-size: 20px;
+          line-height: 26px;
+          &::before
+            left: 0
+  .preim
+    &-item
+      width: 100%
+      margin-bottom: 15px
+      &__inner
+        padding: 15px
+        text-align: left
+    &-list
+      margin-bottom: 0
+  .variant
+    text-align: left
+    &-img
+      width: 97px
+      height: 87px
+      margin-bottom: 20px
+    &-content
+      font-size: 18px;
+      line-height: 23px;
+      b
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 5px
+    &-base
+      border: 1px dashed #7FC24C;
+      box-sizing: border-box;
+      border-radius: 10px;
+      text-align: center
+      padding: 15px 15px 0
+      margin-top: 60px
+      width: 100%
+      &__text
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: 15px
+        &:first-child
+          font-weight: 450;
+      &::before
+        top: -50px
+        right: 30%
+        width: 23px
+        height: 40px
+        background-image: url(../images/icons.svg#arrow-skew3)
+    &s
+      &-flex
+        margin-top: 35px
+        padding: 0
+  .dop
+    margin-bottom: 20px
+    &s-list
+      padding: 0
+    &-img
+      width: 90px
+      height: 90px
+      margin-right: 10px
+    &-content
+      font-size: 18px;
+      line-height: 23px;
+      b
+        font-size: 20px;
+        line-height: 26px;
+  .popular
+    &-list
+      margin-top: 20px
+  .item
+    position: relative
+    &-img
+      width: calc(100% + 30px)
+      border-radius: 0
+      margin: 0 -15px 25px
+      height: 300px
+      align-items: flex-end
+    &-title
+      position: absolute
+      top: 0
+      left: -15px
+      right: -15px
+      background: #26942E;
+      padding: 15px
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+      color: #FFFFFF;
+    &-top
+      height: 0
+    &-price
+      display: none
+      &-mobile
+        display: block
+        margin: 20px 0
+        font-weight: 450;
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+        &--old
+          display: block
+          font-size: 20px;
+          line-height: 1
+          text-decoration-line: line-through;
+          color: #A4A4A4;
+    &-btn-mobile
+      display: flex
+      width: 240px
+      height: 50px
+      font-weight: 450;
+      margin: 0 auto
+    &-bottom
+      padding: 0
+      display: block
+    &-tab
+      width: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 23px;
+      height: 44px
+      color: #000000;
+      border: 1px solid #B8B8B8;
+      &:nth-child(1)
+        border-radius: 5px 0 0 5px
+      &:nth-child(2)
+        border-radius: 0 5px 5px 0
+      &.active
+        border-color: #26942E;
+      &s
+        display: flex
+        background: #FFFFFF;
+        margin-bottom: 20px
+    &-list
+      display: none
+      width: 100%
+      padding: 0
+      &2
+        width: 100%
+        padding: 0
+      &__title
+        display: none
+      &__item
+        font-size: 16px
+        line-height: 20px
+        &::before
+          line-height: 30px
+    &-table
+      width: 100%
+      td
+        font-size: 18px;
+        line-height: 23px;
+  .form-mobile
+    border: 2px solid #41D461;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 30px 0
+    margin: 50px 15px
+    &__container
+      display: block
+      max-width: 300px
+      margin: 0 auto
+      input
+        width: 100%
+        margin-bottom: 15px
+  .quest
+    &-wrapper
+      display: block
+    &-img
+      width: 108px
+      height: 97px
+      margin: 0 20px 15px 0
+      float: left
+    &-title
+      font-size: 24px;
+      line-height: 31px;
+      margin-bottom: 20px
+    &-subtitle
+      font-size: 18px;
+      line-height: 23px;
+    &-link
+      clear: both
+      max-width: 100%
+      padding: 15px
+      font-size: 24px
+      line-height: 31px
+      i
+        flex-shrink: 0
+        width: 30px
+        height: 30px
+  .gallery
+    &-tab
+      width: 225px
+      margin: 0
+      text-align: center
+      height: 44px
+      display: flex
+      align-items: center
+      justify-content: center
+      &.active
+        background: #FFFFFF;
+        border: 1px solid #26942E;
+        box-sizing: border-box;
+        border-radius: 5px;
+        text-decoration: none
+        &:hover
+          border: 1px solid #26942E;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      &s
+        max-width: 225px
+        margin: 25px auto
+        display: block
+      &.all
+        display: block
+    &-item
+      padding: 0
+      &__container
+        height: 240px
+        border-radius: 0
+      &__text
+        border-radius: 0
+        padding: 15px
+        font-size: 18px
+        line-height: 23px
+        b
+          font-size: 20px;
+          line-height: 26px;
+    &-slider
+      padding: 0
+      margin: 0 -15px
+  .slick
+    &-arrow
+      width: 28px
+      height: 28px
+      top: calc(50% - 14px);
+      border-color: #fff
+      background-image: url(../images/icons.svg#arrow-white)
+      &:hover
+        background: #fff
+        background: url(../images/icons.svg#arrow-black) no-repeat center
+        background-size: 20px 20px
+  .bottom
+    &-form
+      background: #FFFFFF;
+      border: 2px solid #41D461;
+      box-sizing: border-box;
+      border-radius: 20px;
+      padding: 30px 15px
+      max-width: 300px
+      margin: 0 auto
+      &__container
+        display: block
+        input
+          width: 100%
+          margin-bottom: 15px
+      &__title
+        font-size: 24px
+        line-height: 30px
+    &-content
+      background: transparent
+    &-title
+      font-size: 24px;
+      line-height: 31px;
+      margin-bottom: 10px
+    &-text
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 20px
+    &-item
+      width: 100%
+      margin-bottom: 20px
+      &__img
+        width: 90px
+        margin-right: 10px
+      &__text
+        font-size: 24px;
+        line-height: 30px;
+  .footer
+    &-logo
+      margin-bottom: 25px
+    &-top
+      padding: 20px 0 30px
+      &__text
+        display: block
+        padding: 0
+        width: 100%
+        margin-bottom: 10px
+      &__wrapper
+        justify-content: center
+        flex-wrap: wrap
+        text-align: center
+      &__title
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 10px
+    &-address
+      padding: 0
+      background: none
+      font-size: 20px;
+      line-height: 26px; 
+    &-contacts
+      text-align: center
+      padding-top: 20px
+      .header
+        &-phone
+          color: #fff
+          font-size: 30px
+          margin-bottom: 20px
+        &-time
+          color: #fff
+          background-size: 20px 20px
+          text-align: center
+          padding-left: 32px
+          font-size: 22px;
+          line-height: 28px;
+    &-bottom
+      &__wrapper
+        justify-content: center
+        flex-wrap: wrap
+    &-copyright
+      width: 100%
+      text-align: center
+      font-size: 18px;
+      line-height: 23px;
+      padding-bottom: 15px
+  .popup
+    &-title
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 15px
+    &-text
+      font-size: 18px
+      line-height: 1.2
+    &-content
+      padding: 50px 15px 30px
+      input
+        width: 100%
+  .peregruz
+    &-item
+      margin-bottom: 30px
+      display: block
+      &__img
+        width: 100%
+        margin: 0 0 20px
+        height: 200px
+      &__title
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 10px
+      &__text
+        margin: 10px 0
+        font-size: 18px
+        line-height: 1.2
+  .vid
+    &-flex
+      margin-top: 20px
+      flex-wrap: wrap
+    &-item
+      width: 100%
+      margin-bottom: 30px
+      &__img
+        height: 200px
+        margin: 0 auto 10px
+        max-width: 300px
+      &__text
+        font-size: 18px
+        line-height: 1
+  .item
+    &-slider
+      border-radius: 0
+      width: calc(100% + 30px)
+      height: 400px
+      margin: 0 -15px 20px
+      .slick-arrow
+        display: none !important
+  .with
+    &-item
+      display: block
+      margin-bottom: 30px
+      text-align: center
+      &__img
+        width: 113px
+        height: 113px
+        margin: 0 auto 24px
+      &__title
+        font-size: 20px;
+        line-height: 26px;
+      &__content
+        font-size: 18px;
+        line-height: 23px;
+        p
+          margin-bottom: 15px
+        strong
+          font-size: 24px
+          line-height: 31px
 
 
 
